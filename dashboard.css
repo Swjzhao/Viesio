@@ -1,0 +1,189 @@
+body{
+  margin:0;
+  overflow-y: hidden;
+  overflow-x:hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+  font-size: 150%;
+  color:white;
+  margin-left: 2vw;
+  margin-top: 0.5vh;
+}
+#fborder{
+  border-left: 0;
+  border-right:0;
+  border-top:0;
+  border-bottom: 0.5px;
+  border-style: solid;
+  border-color: black;
+  width: 80vw;
+  height: 10vh;
+  display:flex;
+  float:right;
+  justify-content: flex-end;
+  background: white;
+}
+
+#head{
+  width: 70vw;
+  height: 12vh;
+  padding-right: 2vw;
+  display:flex;
+  align-items:center;
+
+
+}
+.RH{
+  float:right;
+  width:inherit;
+  text-align: right;
+
+}
+#left{
+  position: relative;
+  float:left;
+  height: 100vh;
+  width: 20vw;
+  background-color: #154360;
+
+}
+.tabc{
+
+    display: none;
+}
+.tab{
+  padding: 10px;
+  padding-left: 2vw;
+  width: 20vw;
+  background-color: #154360;
+  text-align: left;
+  border:0;
+  color:white;
+  cursor: pointer;
+}
+#ltop button.active {
+    background-color: #0066cc;
+}
+
+#ltop{
+  padding-top: 2vh;
+  color:white;
+}
+#lbot{
+  position: fixed;
+  bottom: 10vh;
+  width:20vw;
+}
+.bot a{
+  text-decoration: none;
+  color:white;
+}
+.bot{
+  padding: 10px;
+  padding-left: 2vw;
+  width: 17vw;
+  display: inline-block;
+  background-color: #154360;
+  text-align: left;
+  border:0;
+  color:white;
+  font-size: 60%;
+}
+#logout{
+  padding: 10px;
+  padding-left: 2vw;
+  width: 17vw;
+  display: inline-block;
+  background-color: #154360;
+  text-align: left;
+  border:0;
+  color:white;
+  font-size: 60%;
+  cursor: pointer;
+}
+#logout:hover{
+  opacity: 0.8;
+}
+#ldiv{
+  margin-top: 2vh;
+  margin-left: 2vw;
+  width: 16vw;
+  height: 1px;
+  background-color: white;
+  border-color: white;
+}
+
+
+#dashb{
+  position: relative;
+  padding: 2vw;
+  padding-left: 4vw;
+  float: right;
+  height: 84vh;
+  width:74vw;
+  display: block;
+}
+#dashbl{
+  width:34vw;position: relative;
+  float:left;
+}
+#dashbl img{
+  border: 0px;
+  border-width: 0px;
+}
+#name{
+  font-size: 120%;
+}
+#dashbr{
+  margin-top: 10vh;
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  font-size: 70%;
+  position: relative;
+  float:right;
+    width:40vw;
+}
+#prof{
+  position: relative;
+  padding: 2vw;
+  padding-left: 4vw;
+  float: right;
+  height: 84vh;
+  width:74vw;
+  display: block;
+    overflow-y: scroll;
+}
+#profl{
+  padding-left: 3vw;
+  width:60vw;
+  position: relative;
+  float:left;
+
+}
+#profr{
+  margin-top: 10vh;
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  font-size: 70%;
+  position: relative;
+  float:right;
+    width:11vw;
+}
+.lc{
+  font-weight: bold;
+  font-size: 120%;
+  padding-right: 10vw;
+  width:40vw;
+}
+table{
+    line-height: 300%;
+}
+td{
+
+  margin-top: 2vh;
+}
+.lalign{
+  display:flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,112 @@
+#wrapper{
+
+  position:fixed;
+  z-index: 20;
+  width: 100vw;
+  height:100vh;
+  overflow: hidden;
+  left: 0;
+  top:0;
+  background: rgba(0,87,173,1);
+background: -moz-linear-gradient(45deg, rgba(0,87,173,1) 0%, rgba(0,200,255,1) 40%, rgba(61,216,255,1) 50%, rgba(0,200,255,1) 60%, rgba(0,87,173,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,87,173,1)), color-stop(40%, rgba(0,200,255,1)), color-stop(50%, rgba(61,216,255,1)), color-stop(60%, rgba(0,200,255,1)), color-stop(100%, rgba(0,87,173,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,87,173,1) 0%, rgba(0,200,255,1) 40%, rgba(61,216,255,1) 50%, rgba(0,200,255,1) 60%, rgba(0,87,173,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,87,173,1) 0%, rgba(0,200,255,1) 40%, rgba(61,216,255,1) 50%, rgba(0,200,255,1) 60%, rgba(0,87,173,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,87,173,1) 0%, rgba(0,200,255,1) 40%, rgba(61,216,255,1) 50%, rgba(0,200,255,1) 60%, rgba(0,87,173,1) 100%);
+background: linear-gradient(45deg, rgba(0,87,173,1) 0%, rgba(0,200,255,1) 40%, rgba(61,216,255,1) 50%, rgba(0,200,255,1) 60%, rgba(0,87,173,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0057ad', endColorstr='#0057ad', GradientType=1 );
+}
+#background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+img{
+  width:100vw;
+  height:100vh;
+
+}
+#content{
+    z-index: 1;
+}
+#fleft{
+    position: relative;
+    top: 30vh;
+    left:7vw;
+    color:white;
+    width: 40vw;
+    float:left;
+}
+#welcome{
+  font-size: 20vh;
+}
+#fright {
+    position: relative;
+    background-color: #fefefe;
+    top: 15vh;
+    left:60vw;
+    width: 25vw;
+    height: 60vh;
+    padding: 5vh;
+    border-style: inset;
+    border-radius: 5vh;
+
+
+}
+#frightcontent{
+    position: relative;
+    top: -18vh;
+}
+.break{
+  position: relative;
+  height: 5vh;
+}
+#uname{
+  margin-top: 5vh;
+}
+#uname input[type = text],
+ #uname input[type = password]{
+
+ width: 49%;
+
+
+}
+
+ input[type = text],
+ input[type = email],
+ input[type = password]{
+
+  color:grey;
+  width: 100%;
+  padding: 3vh 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0;
+  outline:0;
+  border-bottom: 0.2px solid rgb(0,102,204,0.95);
+  box-sizing: border-box;
+  background: transparent;
+
+}
+.title{
+    color : #0066CC;
+    font-size: 3vh;
+}
+
+#loginbutton{
+  position:relative;
+  bottom:-6vh;
+  border-radius: 10px;
+  height:5vh;
+  width: 25vw;
+
+  border-color: #0066CC;
+  background-color: #0066CC;
+  text-align: center;
+  font-size: 100%;
+  cursor: pointer;
+  color:white;
+  text-align:center; vertical-align:middle;
+
+}

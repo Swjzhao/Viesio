@@ -1,0 +1,64 @@
+.content{
+  padding-top: 20vh;
+
+  width:65vw;
+}
+.bodyl{
+  position: relative;
+  float:left;
+  width:32.5vw;
+  padding-bottom: 10vh;
+
+}
+#bodytext{
+  padding-right: 2vw;
+  letter-spacing: 1.5px;
+  line-height: 150%;
+}
+
+
+.bodyr{
+  position: relative;
+  width:32.5vw;
+  float:right;
+}
+.socialimg {
+  float:right;
+}
+.socialimg img {
+      margin-top: -5vw;
+      height: 25vw;
+      width:32.5vw;
+
+}
+#tablediv{
+  position: relative;
+  margin-left: :20vh;
+}
+#tablediv{
+  line-height: 300%;
+  margin-top: -10vh;
+  margin-left: 10vw;
+}
+.feature{
+  width: 20vw;
+  font-size: 150%;
+  font-weight: bold;
+}
+#body3{padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+#last{
+  padding-top: 10vh; color :white; width: 1000px;
+}
+#end{
+  height: 80vh;
+  background: rgba(138,138,138,1);
+   background: -moz-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(36,36,36,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,138,138,1)), color-stop(100%, rgba(36,36,36,1)));
+background: -webkit-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(36,36,36,1) 100%);
+background: -o-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(36,36,36,1) 100%);
+background: -ms-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(36,36,36,1) 100%);
+background: linear-gradient(to bottom, rgba(138,138,138,1) 0%, rgba(36,36,36,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8a8a', endColorstr='#242424', GradientType=0 );
+}
