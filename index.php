@@ -14,6 +14,7 @@
 
     </style>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
     <script src="jquery.cycle.js"></script>
 
         <script>
@@ -67,7 +68,7 @@
         <div id = "loginr">
 
           <form action = "login.php" method = "POST">
-            <label for = "user" name = "user"><b>Username</b></label>
+            <label for = "user" name = "user"><b>Email</b></label>
 
             <input class = "field" type = "email" placeholder="Enter Email" name = "email" id ="email" required>
             <div class = "break"></div>
@@ -96,7 +97,7 @@
       </div>
         <div class = "divi" id = "title">
           <div class = "content" id = "titlecontent">
-            <p>Your Entire Social Media History, Organized into one place  </p>
+            <p><i>Your Entire Social Media History, Organized into one place </i> </p>
           </div>
         </div>
         <div class = "divi" id = "body1">

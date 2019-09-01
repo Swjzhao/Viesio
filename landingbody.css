@@ -3,6 +3,10 @@
 
   width:65vw;
 }
+#titlecontent{
+  text-align: center;
+  font-size: 150%;
+}
 .bodyl{
   position: relative;
   float:left;

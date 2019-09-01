@@ -9,6 +9,8 @@
   <link href='dashboard.css' rel='stylesheet' type='text/css' />
   <script> </script>
   <script src="dashboard.js"> </script>
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+     <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
 </head>
 <body>
 
@@ -48,18 +50,46 @@
       <div id = "dashbl">
         <?php
           if(isset($_SESSION['id'])){
-            echo "<p id='name'>".$_SESSION['fname']."&nbsp;&nbsp;&nbsp;".$_SESSION['lname']."</p>";
+            echo "<p id='name'>".$_SESSION['fname']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$_SESSION['lname']."</p>";
           }
          ?>
+        <script>
 
-        <img src="Graphics/PieChart.png" height = "200vh" />
-        <img src="Graphics/Histogram.png" height = "200vh" />
+        anychart.onDocumentReady(function() {
+          var data = [
+              {x: "Profanity", value: 223553265},
+              {x: "Racism", value: 38929319},
+              {x: "Sexism", value: 2932248}
+            ];
+
+          var chart = anychart.pie();
+
+          chart.title("Recent");
+          chart.data(data);
+
+          chart.legend().position("right");
+          chart.legend().itemsLayout("vertical");
+
+          chart.container('dashbl');
+          chart.draw();
+
+        });
+
+
+        </script>
+
+
       </div>
+    <!--  <div id = "dashblb">
+          <img src="Graphics/Histogram.png" height = "200vh" />
+      </div> -->
       <div id = "dashbr">
         <h1> Analysis </h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sodales mi, ut efficitur lorem. Morbi ut luctus lorem, vitae tincidunt ligula. Aliquam consectetur feugiat neque, ut suscipit purus sollicitudin non. In rhoncus sodales erat vitae laoreet. Donec quis molestie ex, a mattis neque. Aenean lorem sem, tincidunt sit amet quam non, mattis feugiat metus. Sed egestas ipsum in eros lobortis vulputate et vel purus. Praesent a massa ligula. Mauris convallis risus eget ante iaculis, at volutpat augue consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, nibh sit amet faucibus tristique, nunc dolor blandit eros, sed blandit mi nulla id justo. Donec nec massa pulvinar, sodales felis tristique, maximus quam. In suscipit, dolor in eleifend accumsan, tellus dolor ullamcorper tortor, sed imperdiet enim lectus ac augue. Cras bibendum convallis turpis, id pharetra tellus suscipit ac.
+        <p> Positivity: After analyze your social activities, we find that there is (%%) positive, (%%) neutral and (%%) negative comments. According to this result, your positivity rating from -1.00 to 1.00 is (0.63). You are a/an (adj.) person and we recommend your to (keep/ change) the way you post your comment. (Maybe you want to consider involve some positive comment such as … .)  </p>
+        <p> Racism: (%%) of your social post are considered to be racist. （(if 0%)You are not considered as a rasist person based on your social profile）Here are all the comments we found that might be racist. You may consider to change the wording such as changing “niggar” to “black people”. Additionally, (%%)  is considered to be extremely racist. They may have negative impact when you applying a job or applying a learning institution. You may consider either delete them or change them.
         </p>
-        <p>Donec lacinia et nulla sit amet aliquet. Etiam sit amet porttitor justo. Suspendisse aliquam augue sit amet imperdiet maximus. Proin id nulla eget sem imperdiet posuere lacinia eget magna. Ut leo nunc, pretium vitae blandit vitae, rutrum eget odio. Vestibulum convallis nec mi et venenatis. Praesent sit amet aliquam felis. Quisque ac mauris et sapien tincidunt sodales a eget enim.
+        <p>
+          Profanity: we have highlighted any profane language you used and you can decide what to do with it.
         </p>
       </div>
     </div>

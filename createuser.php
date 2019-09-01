@@ -41,7 +41,12 @@
         VALUES ('$fname', '$lname', '$email', 'none', '$hashedpasswd' )";
 
         $result= mysqli_query($connect, $statement);
-        header("Location: createuserpage.php?create=success");
+        // session not loaded
+        $_SESSION['id'] = $row['id'];
+        $_SESSION['fname'] = $row['first'];
+        $_SESSION['lname'] = $row['last'];
+        $_SESSION['email'] = $row['email'];
+        header("Location: dashboard.php");
         exit();
       }
     }

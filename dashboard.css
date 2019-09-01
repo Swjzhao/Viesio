@@ -125,7 +125,14 @@ body{
   display: block;
 }
 #dashbl{
-  width:34vw;position: relative;
+  width:34vw;
+  position: relative;
+  float:left;
+  height:35vh;
+}
+#dashblb{
+  width:34vw;
+  position: relative;
   float:left;
 }
 #dashbl img{
@@ -142,7 +149,12 @@ body{
   font-size: 70%;
   position: relative;
   float:right;
-    width:40vw;
+    width:30vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+#dashbr p{
+   text-indent: 50px;
 }
 #prof{
   position: relative;
